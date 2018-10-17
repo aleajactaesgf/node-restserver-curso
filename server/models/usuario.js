@@ -22,7 +22,7 @@ let usuarioSchema = new Schema({
     },
     password: {
         type: String,
-        required: [true, 'La contraseña es necesaria']
+        required: [this.google === false, 'La contraseña es necesaria']
     },
     img: {
         type: String,
